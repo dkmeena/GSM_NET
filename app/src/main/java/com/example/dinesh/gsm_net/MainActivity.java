@@ -150,6 +150,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
     public void onClick(View v) {
 
         if (v.getId() == R.id.start && flagstrt==0 && flagstop==0) {
+            //hellogitsda
             tm = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
             locationManagerNET = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
             locationManagerNET.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 0, locationListenerNET);
